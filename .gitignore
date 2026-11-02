@@ -1,0 +1,10 @@
+node_modules/
+client/node_modules/
+server/node_modules/
+client/dist/
+server/.env
+server/serviceAccountKey.json
+server/canteen.sqlite
+server/canteen.sqlite-*
+local-printer-spool/
+*.log

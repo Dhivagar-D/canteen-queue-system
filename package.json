@@ -1,0 +1,22 @@
+{
+  "name": "campus-canteen-dual-printer-system",
+  "version": "1.0.0",
+  "description": "Hybrid Cloud-Based College Canteen Queue-Reduction & Dual-Printer Dispatch System",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "test": "node server/tests/test-load-balancing.js",
+    "build": "npm --prefix client run build",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "canteen-management",
+    "queue-reduction",
+    "dual-printer",
+    "thermal-printer",
+    "pos",
+    "spooler"
+  ],
+  "author": "",
+  "license": "ISC"
+}

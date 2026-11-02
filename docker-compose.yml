@@ -1,0 +1,17 @@
+services:
+  canteen-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: canteen_express_app
+    restart: unless-stopped
+    ports:
+      - "5050:5000"
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server/serviceAccountKey.json:/app/server/serviceAccountKey.json:ro
+    environment:
+      PORT: 5000
+      NODE_ENV: production
+      REQUIRE_FIREBASE: "true"
